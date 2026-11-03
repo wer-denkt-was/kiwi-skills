@@ -1,5 +1,7 @@
 # Kiwi skills for Claude Code
 
+&copy; werdenktwas GmbH, 2026 - Licensed under the EUPL-1.2
+
 This repository contains the [Claude Code](https://code.claude.com) plugin `kiwi` for developing applications with
 the Kiwi Server Framework and Kiwi-Vue, published by the marketplace `kiwi-framework` declared in
 `.claude-plugin/marketplace.json`. The plugin contains three skills:
