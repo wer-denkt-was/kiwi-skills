@@ -1,0 +1,18 @@
+{
+  "name": "kiwi-framework",
+  "owner": {
+    "name": "werdenktwas GmbH",
+    "email": "dahmen@werdenktwas.de"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for developing applications with the Kiwi Framework"
+  },
+  "plugins": [
+    {
+      "name": "kiwi",
+      "source": "./plugins/kiwi",
+      "description": "Kiwi Server Framework 1.5 and Kiwi-Vue 2: development guides with the full documentation, and the Kiwi 1.4 → 1.5 / Kiwi-Vue 1.x → 2.0 upgrade workflow",
+      "version": "1.5.0"
+    }
+  ]
+}

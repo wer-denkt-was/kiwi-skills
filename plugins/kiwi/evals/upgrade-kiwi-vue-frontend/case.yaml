@@ -1,0 +1,12 @@
+schema_version: "1.1"
+name: upgrade-kiwi-vue-frontend
+expected_outcome: |
+  The frontend-only project is upgraded from Kiwi-Vue 1.x to 2.0 on an upgrade branch, without running npm: the
+  dependency is ^2.0.0, the generated model is replaced by the regenerated one from incoming/, both CRUD services
+  have four type parameters, create/update calls lose their body type arguments, updates send only the changed
+  properties (no spread of the loaded item), the create body uses the key "list" instead of "listId", the health
+  check keeps requesting the origin root with an absolute URL, the FetchApi/CredentialsInvalid usages follow the 2.0
+  API, and messages for entity-body-invalid (or its nested codes), access-denied and unauthorized are added.
+  KIWI-UPGRADE.md lists the client-facing changes and that the lock file must be updated.
+context:
+  scaffold_script: place-files.sh

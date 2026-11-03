@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: detect-reports-findings
+expected_outcome: |
+  Only the detection phase runs: KIWI-UPGRADE.md is created in the project root with the findings of the
+  detection script, confirmed against the code and grouped by phase, and no source, build or configuration file
+  is modified. The report covers the kiwi-bundle artifact, the imported Kiwi configurations, the Jackson 2 code
+  (including the JsonNode.map pitfall in JsonTags.kt), the 1.4-style generic commands and handlers, the removed
+  properties (kiwi.jwt, enable-audit-logging), the missing storage provider, the PUT request in the frontend,
+  and the role change of the "support" user, which becomes a Kiwi admin with Kiwi 1.5.
+context:
+  scaffold_script: place-files.sh

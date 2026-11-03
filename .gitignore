@@ -1,0 +1,13 @@
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+
+### Mac OS ###
+.DS_Store
+
+# Results of claude plugin eval
+plugins/kiwi/evals/results/

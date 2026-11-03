@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: generic-crud-endpoints
+expected_outcome: |
+  The endpoints are implemented with Kiwi generic commands and queries instead of a hand-written controller: a
+  GenericEntityQuery<Project>, GenericCreate/GenericUpdate/GenericDelete commands declaring their body
+  properties with schema(...) and a detailsProvider, and @Component handlers extending the generic handlers.
+  The owner is taken from the user (not from the request body), and update/delete check owner-or-admin.
+context:
+  scaffold_script: place-files.sh

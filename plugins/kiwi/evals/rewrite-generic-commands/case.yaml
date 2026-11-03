@@ -1,0 +1,11 @@
+schema_version: "1.1"
+name: rewrite-generic-commands
+expected_outcome: |
+  The Product generic commands and handlers are rewritten to the Kiwi 1.5 API following the generic-commands
+  reference: CreateProduct and UpdateProduct declare their body properties (category reference or categoryId
+  property, name, price, description, and archived for updates), all three commands use detailsProvider, the
+  handlers take the typed commands, patchNotNull calls become ifPatchedNotNull keeping the domain events of
+  changePrice and archive, and the test binds its JSON with bind(...). The answer lists the changed JSON key
+  (categoryId -> category) or explains that it was kept using property("categoryId").
+context:
+  scaffold_script: place-files.sh

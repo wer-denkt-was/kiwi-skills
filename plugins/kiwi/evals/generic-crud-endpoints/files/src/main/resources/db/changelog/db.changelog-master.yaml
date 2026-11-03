@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-project
+      author: example
+      changes:
+        - createTable:
+            tableName: project
+            columns:
+              - column: { name: id, type: BIGINT, constraints: { primaryKey: true, nullable: false } }
+              - column: { name: title, type: VARCHAR(200), constraints: { nullable: false } }
+              - column: { name: description, type: TEXT }
+              - column: { name: owner, type: VARCHAR(255), constraints: { nullable: false } }
+              - column: { name: status, type: VARCHAR(20), constraints: { nullable: false } }

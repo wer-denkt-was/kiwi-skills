@@ -1,0 +1,19 @@
+{
+  "name": "kiwi",
+  "version": "1.5.0",
+  "description": "Kiwi Server Framework 1.5 and Kiwi-Vue 2: Development guides with the full documentation, and the Kiwi 1.4 → 1.5 / Kiwi-Vue 1.x → 2.0 upgrade workflow",
+  "author": {
+    "name": "werdenktwas GmbH",
+    "email": "dahmen@werdenktwas.de"
+  },
+  "keywords": [
+    "kiwi",
+    "kiwi-server",
+    "kiwi-framework",
+    "spring-boot",
+    "kotlin",
+    "migration",
+    "kiwi-vue",
+    "vue"
+  ]
+}

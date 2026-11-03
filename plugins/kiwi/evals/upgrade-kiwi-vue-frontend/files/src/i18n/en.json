@@ -1,0 +1,8 @@
+{
+  "errors": {
+    "entity-not-found": "The item could not be found.",
+    "entity-not-found[entityType=de.kiwi.demo.domain.TodoItem]": "Todo item '{id}' does not exist.",
+    "forbidden": "You are not allowed to do this.",
+    "credentials-invalid": "Your session has expired, please log in again."
+  }
+}
